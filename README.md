@@ -3,7 +3,7 @@ Matehackers novo site
 
 Novo layout para a nova jornada do Matehackers.
 
-O projeto será feito com Twitter Bootstrap 3 para o grid e design responsivo, não foi pensado em usar suas e cores.
+O projeto será feito com Twitter Bootstrap 3 para o grid e design responsivo, não foi pensado em usar suas cores.
 
 O projeto também utilizará Less, less é uma linguagem baseada em CSS, mais informações aqui http://lesscss.org/
 

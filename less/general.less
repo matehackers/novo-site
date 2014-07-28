@@ -47,12 +47,8 @@ body {
 			margin-right: 10px;
 			width: 30px;
 			text-align: center;
-			background: #fff;
-			-webkit-transition: background .5s ease-in-out;
-			-moz-transition: background .5s ease-in-out;
-			-o-transition: background .5s ease-in-out;
-			-ms-transition: background .5s ease-in-out;
-			transition: background .5s ease-in-out;
+			background: @white;
+			.transition (background .3s ease-in-out);
 			padding: 0.45em 0.45em;
 			list-style: none;
 			float: left;
@@ -63,7 +59,7 @@ body {
 
 			&:hover {
 				i.fa {
-					color: #ffffff;
+					color: @white;
 				}
 
 				&.facebook{
@@ -84,6 +80,9 @@ body {
 
 				&.reddit{
 					background: #CEE3F8;
+					i.fa {
+						color: @black;
+					}
 				}
 			}
 

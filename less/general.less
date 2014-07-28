@@ -47,24 +47,43 @@ body {
 			margin-right: 10px;
 			width: 30px;
 			text-align: center;
-			background: #fff;
-			-webkit-transition: background .5s ease-in-out;
-			-moz-transition: background .5s ease-in-out;
-			-o-transition: background .5s ease-in-out;
-			-ms-transition: background .5s ease-in-out;
-			transition: background .5s ease-in-out;
+			background: @white;
+			.transition (background .3s ease-in-out);
 			padding: 0.45em 0.45em;
 			list-style: none;
 			float: left;
 
 			a {
 				color: @mainColor;
+			}
 
-				/*&:hover {
+			&:hover {
+				i.fa {
+					color: @white;
+				}
+
+				&.facebook{
+					background: #4862A3;
+				}
+
+				&.twitter{
+					background: #2C77BA;
+				}
+
+				&.github{
+					background: #333333;
+				}
+
+				&.google-plus{
+					background: #DD4B39;
+				}
+
+				&.reddit{
+					background: #CEE3F8;
 					i.fa {
-						color: #ffffff;
+						color: @black;
 					}
-				}*/
+				}
 			}
 
 			i.fa {

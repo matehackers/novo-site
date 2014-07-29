@@ -28,6 +28,7 @@ body {
 			color: @white;
 		}
 
+
 		i.fa {
 			margin-right: 5px;
 		}
@@ -35,9 +36,8 @@ body {
 	}
 
 	ul.social {
-		display: block;
-		list-style-type: disc;
 		margin-bottom: 0;
+		padding-left: 0;
 
 		li {
 			border-radius: 10% 10% 10% 10%;
@@ -46,13 +46,13 @@ body {
 			display: inline-block;
 			height: 30px;
 			margin-right: 10px;
+			margin-left: -4px;
 			width: 30px;
 			text-align: center;
 			background: @white;
 			.transition (background .3s ease-in-out);
 			padding: 0.45em 0.45em;
 			list-style: none;
-			float: left;
 
 			a {
 				color: @mainColor;
@@ -115,3 +115,74 @@ body {
 }
 
 
+
+
+
+@media (max-width: 768px) { /* TODO ajustar essa media query para utilizar as variaveis do bootstrap! */ 
+	body {
+
+		.menu-top {
+			min-height: 0px;
+			padding: 3px 0;
+			text-align: center;
+			float: none !important;
+			.pull-left, .pull-right {
+				float: none !important;
+			}
+
+			.slidedown {
+				padding-bottom: 8px;
+			}
+
+		}
+
+		.contact {
+			a {
+				text-align: center;
+				display:block;
+				line-height: 30px;
+			}
+
+		}
+
+		#top {
+			#downbuttondiv {
+				text-align: center;
+
+				.down-button {
+				    float: none;
+					cursor: pointer;
+				    margin-top: -1px;
+				    padding: 0;
+				    
+				    i.fa {
+				    	color: @white;
+						background: @mainColor;
+						opacity: @opacityMainColor;
+				    	display: inline-block;
+				    	border-radius: 0 0 3px 3px;
+				    	padding: 4px 10px 2px;
+					}
+				}
+			}
+
+		}
+
+	}
+}
+
+
+@media (min-width: 768px) {
+	body {
+
+		.menu-top {
+			.collapse {
+				display: block !important;
+    			height: auto !important;
+    			overflow: visible !important;
+			}
+		}
+
+	}
+
+}

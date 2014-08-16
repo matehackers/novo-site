@@ -7,8 +7,6 @@
 
 	$('.open-close').on('click', function() {
 		$('.icon-padlock').toggleClass('fa fa-unlock fa fa-lock');
-		var text = $('.icon-padlock').html(
-			text === ' Matehacker Aberto!' ? ' Matehacker Aberto!' : ' Matehackers Fechado!');
 	});
 
 }(window.jQuery);

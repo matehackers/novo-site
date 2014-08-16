@@ -112,11 +112,30 @@ body {
 		}
 	}
 
+	.open-close {
+		i {
+			&:after {
+				font-family: 'Tahoma';
+				font-size: 16px;
+			}
+		}
+
+		i.fa-unlock{
+			font-size: 20px;
+			&:after {
+				content: " Matehackers Aberto";
+			}
+		}
+
+		i.fa-lock{
+			font-size: 20px;
+
+			&:after {
+				content: " Matehackers Fechado";
+			}
+		}
+	}
 }
-
-
-
-
 
 @media (max-width: 768px) { /* TODO ajustar essa media query para utilizar as variaveis do bootstrap! */ 
 	body {

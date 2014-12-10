@@ -12,7 +12,7 @@
 	</head>
 	<body cz-shortcut-listen="true">
         
-        <div id="">
+        <div id="wrapper">
             <div id="sidebar-wrapper">
                 <ul class="sidebar-nav">
                     <li class="sidebar-brand">
@@ -21,25 +21,22 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">Dashboard</a>
+                        <a href="#">#link1</a>
                     </li>
                     <li>
-                        <a href="#">Shortcuts</a>
+                        <a href="#">#link2</a>
                     </li>
                     <li>
-                        <a href="#">Overview</a>
+                        <a href="#">#link3</a>
                     </li>
                     <li>
-                        <a href="#">Events</a>
+                        <a href="#">#link4</a>
                     </li>
                     <li>
-                        <a href="#">About</a>
+                        <a href="#">#link5</a>
                     </li>
                     <li>
-                        <a href="#">Services</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
+                        <a href="#">#link6</a>
                     </li>
                 </ul>
             </div>
@@ -47,23 +44,26 @@
             <div id="page-content-wrapper" class="entrance">
                 <div class="container-fluid">
                     <div class="row">
+                        <a href="#close-menu" class="pull-right close-menu" id="close-menu">
+                            <span class="glyphicon glyphicon-chevron-left pull-right"></span>
+                        </a>
                             <div class="col-lg-8 col-lg-offset-2 text-center logo">
-                                <img class="main-logo" src="img/logo_mate_white.png" height="125" width="300"> 
-                                <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+                                <!--<img class="main-logo" src="img/logo_mate_white.png" height="125" width="300">
+                                <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>-->
+                                <!--<p class="content-data"> Um hackerspace ou hackspace (de Hacker e Espaço) (também conhecido como hacklab, makerspace   ou creative space) é um local real (em oposição ao virtual) com o formato de um laboratório comunitário que segue a Etica_Hacker, tendo espírito agregador, convergente e inspirador. Nele, pessoas com interesses em comum, normalmente em ciência, tecnologia, arte digital ou eletronica podem se encontrar, socializar e colaborar. Um hackerspace pode ser visto como um laboratório comunitário, uma oficina ou um estúdio onde pessoas de diversas áreas podem trocar conhecimento e experiência para construir algo juntos.</p>-->
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    
         <script src="lib/jquery/jquery.min.js"></script>
         <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-
         <script>
-            $("#menu-toggle").click(function(e) {
-                e.preventDefault();
-                $("#wrapper").toggleClass("toggled");
+            $('#close-menu').on( 'click', function( event ) {
+                event.preventDefault();
+                $('#wrapper').toggleClass('toggled');
+                $( '.glyphicon' ).toggleClass('glyphicon-chevron-left glyphicon-chevron-right');
             });
         </script>
 	</body>
